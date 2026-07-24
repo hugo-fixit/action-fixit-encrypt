@@ -1,13 +1,13 @@
-name: 'FixIt Encrypt Setup'
-description: 'GitHub Actions for fixit-encrypt — Setup fixit-encrypt to encrypt your FixIt Hugo site content.'
+name: FixIt Encrypt Setup
+description: GitHub Action for fixit-encrypt — Setup fixit-encrypt to encrypt your FixIt Hugo site content.
+branding:
+  icon: lock
+  color: blue
 inputs:
   version:
     description: 'fixit-encrypt version (e.g., "0.2.0") or "latest"'
     required: false
-    default: 'latest'
+    default: latest
 runs:
-  using: 'node24'
-  main: 'dist/index.cjs'
-branding:
-  icon: 'lock'
-  color: 'blue'
+  using: node24
+  main: dist/index.cjs
